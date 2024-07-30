@@ -40,7 +40,7 @@ Welcome to my CS50x final project! My idea was to create a movie trivia game whe
 >Anna KENDRICK Lamar
 <br/>Stockard CHANNING Tatum
 
-The game provides the unshared names as well as headshots of each person as clues.
+The game provides the unshared names as well as headshots of each person as clues. API script for TMDB included to download your own headshots.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
