@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.image-hint {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hint, .input-box {
+    margin: 20px;
+}
+
+
+input {
+    text-align:center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

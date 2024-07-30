@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block main %}
+    <h2>Can you guess the shared name?</h2>
+    <div class="container">
+        <div class="image-hint">
+            <img src="static/{{ image1 }}" alt="Image 1">
+            <div class="hint">{{person1}} _____</div>
+        </div>
+        {% if guessed == False %}
+        <div class="input-box">
+            <form method='POST'>
+                <input  type="text" name="guess" placeholder="Shared Name" autocomplete="off" autofocus="on">
+            </form>
+        </div>
+        {% else %}
+        <div class = "input-box">
+            <a id="reset" href="/" autofocus>Play Again</a>
+        </div>
+        {% endif %}
+        <div class="image-hint">
+            <img src="static/{{ image2 }}" alt="Image 2">
+            <div class="hint">_____ {{person2}}</div>
+        </div>
+    </div>
+
+    {% if result == 'Correct!' %}
+        <h4><span class="p-3 mb-2 bg-success text-white">{{result}}</span> The answer was <u>{{answer}}</u></h4>
+    {% elif result == 'Incorrect!' %}
+        <h4><span class="p-3 mb-2 bg-danger text-white">{{result}}</span> The correct answer was <u>{{answer}}</u></h4>
+    {% else %}
+    {% endif %}
+
+{% endblock %}
